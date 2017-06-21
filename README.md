@@ -1,0 +1,2 @@
+# AutoUpdateKanbanForGitHub
+GitHubで自動更新のカンバン作ってみたい
