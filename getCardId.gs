@@ -11,13 +11,5 @@ function getCardId(pullRequestId) {
 }
 
 function getCardList(columnId) {
-  var headers = {
-    "Accept" : "application/vnd.github.inertia-preview+json"
-  };
-  var options = {
-    "method" : "GET",
-    "headers" : headers
-  };
-  var url = "https://api.github.com/projects/columns/" + columnId + "/cards?access_token=取得したトークン";
-  return JSON.parse(UrlFetchApp.fetch(url, options));
+  return gitHubApi(columnId + "/cards", "GET");
 }
