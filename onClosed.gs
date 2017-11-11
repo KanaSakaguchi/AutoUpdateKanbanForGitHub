@@ -1,6 +1,6 @@
-function onClosed(data) {
-  if (!data.pull_request.merged) {
+function onClosed(pull_request) {
+  if (!pull_request.merged) {
     return;
   }
-  moveCard(data.number, Column.RELEASE_COMPLETE);
+  moveCard(pull_request, Column.RELEASE_COMPLETE);
 }

@@ -2,13 +2,13 @@ function doPost(data) {
   data = JSON.parse(data.postData.contents);
   switch (data.action) {
     case 'opened':
-      onOpened(data);
+      onOpened(data.pull_request);
       break;
     case 'labeled':
-      onLabeled(data);
+      onLabeled(data.pull_request, data.label);
       break;
     case 'closed':
-      onClosed(data);
+      onClosed(data.pull_request);
       break;
   }
 }
