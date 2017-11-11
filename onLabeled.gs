@@ -14,7 +14,7 @@ function onLabeled(pull_request, label) {
       moveCard(pull_request.number, Column.TEST_PENDING);
       break;
     case "テスト済み":
-      moveCard(pull_request.number, Column.REVIEW_PENDING);
+      moveCard(pull_request.number, Column.RELEASE_COMPLETE);
       break;
   }
 }
