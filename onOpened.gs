@@ -1,7 +1,7 @@
 function onOpened(data) {
   if (data.pull_request.title.match(/\[WIP]/i)) {
-    createCard(data.pull_request.id, IN_IMPLEMENTATION);
+    createCard(data.pull_request.id, Column.IN_IMPLEMENTATION);
   } else {
-    createCard(data.pull_request.id, UNCATEGORIZED);
+    createCard(data.pull_request.id, Column.UNCATEGORIZED);
   }
 }
