@@ -1,3 +1,9 @@
+/**
+ * プルリクのラベルに合わせてカードを移動
+ *
+ * @param pull_request {JSON} プルリクの情報
+ * @param label        {JSON} 追加されたラベルの情報
+ */
 function onLabeled(pull_request, label) {
   switch (label.name) {
     case "レビュー待ち":

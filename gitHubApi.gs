@@ -1,3 +1,11 @@
+/**
+ * GitHubのAPIを実行
+ *
+ * @param param   {string} パラメータ
+ * @param method  {string} メソッド
+ * @param payload {string} POSTするデータ
+ * @return {JSON} 実行結果
+ */
 function gitHubApi(param, method, payload) {
   var headers = {
     "Accept": "application/vnd.github.inertia-preview+json"

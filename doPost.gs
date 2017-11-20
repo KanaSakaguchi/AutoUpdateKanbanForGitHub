@@ -1,3 +1,8 @@
+/**
+ * GitHubのWebHookからPOSTされると呼び出される
+ *
+ * @param data {JSON} GitHubのWebHookからPOSTされたデータ
+ */
 function doPost(data) {
   data = JSON.parse(data.postData.contents);
   switch (data.action) {

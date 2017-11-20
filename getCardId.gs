@@ -1,3 +1,7 @@
+/**
+ * @param pullRequestId {number} プルリクのID
+ * @returns {number} プルリクのカードのID
+ */
 function getCardId(pullRequestId) {
   var columnIds = Object.keys(Column);
   for (var n = 0; n < columnIds.length; n++) {
@@ -10,6 +14,10 @@ function getCardId(pullRequestId) {
   }
 }
 
+/**
+ * @param columnId カラムID
+ * @return {JSON}
+ */
 function getCardList(columnId) {
   return gitHubApi(columnId + "/cards", "GET");
 }

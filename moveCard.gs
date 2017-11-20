@@ -1,3 +1,9 @@
+/**
+ * プルリクのカードを移動する
+ *
+ * @param pullRequestId {number} プルリクのID
+ * @param columnId      {number} カード移動先カラムのID
+ */
 function moveCard(pullRequestId, columnId) {
   var payload = JSON.stringify({
     "position": "top",
