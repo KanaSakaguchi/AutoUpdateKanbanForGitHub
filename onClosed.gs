@@ -1,6 +1,11 @@
-function onClosed(data) {
-  if (!data.pull_request.merged) {
+/**
+ * マージされたらリリース完了に移動
+ *
+ * @param pull_request {JSON} プルリクエスト
+ */
+function onClosed(pull_request) {
+  if (!pull_request.merged) {
     return;
   }
-  moveCard(data.number, RELEASE_COMPLETE);
+  moveCard(pull_request.number, Column.RELEASE_COMPLETE);
 }
