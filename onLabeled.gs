@@ -20,7 +20,7 @@ function onLabeled(pull_request, label) {
       moveCard(pull_request.number, Column.TEST_PENDING);
       break;
     case "テスト済み":
-      moveCard(pull_request.number, Column.RELEASE_COMPLETE);
+      moveCard(pull_request.number, Column.RELEASE_PENDING);
       break;
   }
 }
