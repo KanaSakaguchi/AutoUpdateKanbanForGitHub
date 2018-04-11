@@ -5,5 +5,5 @@ var Column = {
   SELF_TEST_PENDING:, //「セルフテスト待ち」カラムのID,
   TEST_PENDING:, //「テスト待ち」カラムのID,
   RELEASE_PENDING:, //「リリース待ち」カラムのID,
-  RELEASE_COMPLETE:  //「リリース完了」カラムのID,
+  RELEASE_COMPLETE: //「リリース完了」カラムのID,
 };
