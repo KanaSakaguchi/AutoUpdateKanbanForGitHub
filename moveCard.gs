@@ -5,10 +5,10 @@
  * @param columnId      {number} カード移動先カラムのID
  */
 function moveCard(pullRequestId, columnId) {
-  var payload = JSON.stringify({
+  var payload = {
     "position": "top",
     "column_id": columnId
-  });
+  };
   var cardId = getCardId(pullRequestId);
   gitHubApi("cards/" + cardId + "/moves", "POST", payload);
 }

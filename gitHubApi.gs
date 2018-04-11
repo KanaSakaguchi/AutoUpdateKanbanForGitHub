@@ -3,7 +3,7 @@
  *
  * @param param   {string} パラメータ
  * @param method  {string} メソッド
- * @param payload {string} POSTするデータ
+ * @param payload {Object} POSTするデータ
  * @return {JSON} 実行結果
  */
 function gitHubApi(param, method, payload) {
